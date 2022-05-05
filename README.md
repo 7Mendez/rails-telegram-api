@@ -1,5 +1,10 @@
 # Telegram Channel Send Message + Sidekiq
 
+# Demo Image
+![image](https://user-images.githubusercontent.com/42225749/166961228-6ca377e6-875e-4efd-a983-6317dd0e8f92.png)
+
+
+
 ## Includes
 - Using Henry - Rails 7 start init template.
 - Httparty.
