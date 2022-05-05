@@ -1,0 +1,28 @@
+<div class="container mx-auto p-4 bg-white">
+  <div class="w-full md:w-1/2 lg:w-1/3 mx-auto my-12">
+    <h1 class="text-lg font-bold">Reset password instructions</h1>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), class:'flex flex-col mt-4') do |f| %>
+      <div class="flex flex-col items-center mt-5">
+        <%= render "devise/shared/error_messages", resource: resource %>
+      </div>
+
+      <div class="field mb-4">
+        <%= f.label :email %>
+        <%= f.email_field :email,
+                          autofocus: true,
+                          autocomplete: "email",
+                          class:'px-4 py-3 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm' %>
+      </div>
+
+
+      <div class="actions">
+        <%= f.submit "Send me reset password instructions", class:'mt-4 px-4 py-3 leading-6 text-base rounded-md border border-transparent text-white focus:outline-none bg-blue-500 text-blue-100 hover:text-white focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 cursor-pointer inline-flex items-center w-full justify-center items-center font-medium focus:outline-none' %>
+      </div>
+    <% end %>
+
+
+    <div class="flex flex-col items-center mt-5">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
