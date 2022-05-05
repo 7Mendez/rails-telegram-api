@@ -364,10 +364,10 @@ module.exports = {
         'Arial',
         '"Noto Sans"',
         'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
+        '"Apple Color EmojiService"',
+        '"Segoe UI EmojiService"',
         '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
+        '"Noto Color EmojiService"',
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
